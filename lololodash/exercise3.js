@@ -36,9 +36,6 @@ var worker = function(items) {
         item.size = item.population > 1 ? 'big' : item.population > .5 ? 'med' : 'small';
         return item
     });
-
-      
-      
 };
 
 module.exports = worker;
