@@ -22,8 +22,6 @@ var _ = require("lodash");
 //       { username: "foobar", comment_count: 2 } ]
 
 var worker = function(comments) {
-   
-    var users = _.groupBy(comments, 'username');
     
     return _.chain(comments)
             .groupBy('username')
