@@ -20,7 +20,7 @@ var worker = function(data) {
         name: data.name,
         logins: _.size(data.login)
     };
-   
+   _.map()
     return _.template(template)(values);
 };
 
